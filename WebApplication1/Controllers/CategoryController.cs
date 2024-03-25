@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication1.Data;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -14,8 +15,8 @@ namespace WebApplication1.Controllers
 
         public IActionResult Index()
         {
-            var objCatrgoryList = _db.categories.ToList();
-            return View();
+            IEnumerable<Category> objCatrgoryList = _db.categories;
+            return View(objCatrgoryList);
         }
     }
 }

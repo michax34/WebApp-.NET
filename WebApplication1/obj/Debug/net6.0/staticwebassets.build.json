@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pJOnqRHJeSPHHLY9Ys4kDaUfg1u2Sv9w5y8aYseJCZU=",
+  "Hash": "LnSVFBPmUxYXmsjz+UNVpxvj9pANdqgNnK9UEBowGfU=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\kody\\git\\WebApp-.NET\\WebApplication1\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\kody\\git\\WebApp-.NET\\WebApplication1\\wwwroot\\css\\boostrap.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\kody\\git\\WebApp-.NET\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/boostrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\boostrap.css"
     },
     {
       "Identity": "D:\\kody\\git\\WebApp-.NET\\WebApplication1\\wwwroot\\css\\site.css",

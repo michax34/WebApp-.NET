@@ -45,5 +45,44 @@ namespace WebApplication1.Controllers
             }
 
         }
+
+        [HttpGet]
+        public IActionResult Edit(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+            var categortyFromDb = _db.categories.Find(id);
+
+            if (categortyFromDb == null)
+            {
+                return NotFound();
+            }
+
+            return View(categortyFromDb);
+        }
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Edit(Category obj)
+        {
+            if (obj.Name == obj.DisplayyOrder.ToString())
+            {
+                ModelState.AddModelError("name", "The Display Order cannot exacly match the Name.");
+            }
+            if (ModelState.IsValid)
+            {
+                _db.categories.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(obj);
+            }
+
+        }
+
     }
 }
